@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mon Profil</title>
+  <link rel="stylesheet" href="css.css">
+  <img id="logo" src="windows.jpg" alt="image de windows 10">
+  <header>
+    <p>Walers Léo</p>
+    <p>L'image de Windows</p>
+  </header>
+</head>
+
+<body>
+  <h2 id="presentation"> Présentation de moi même</h2>
+  <p>Je suis Léo, j'ai actuellement 18ans et je suis né le 23 août 2005</p>
+  <p> J'ai fais un bac STMG au lycée Henri Wallon et je suis maintenant en bts SIO à Dampierre</p>
+  <p>J'aime beaucoup l'informatique, les jeux, la musculation</p>
+  <main id="autre">Autres :</main>
+
+
+
+
+  <button onclick="changeColor()"> Change de couleur </button>
+
+
+
+
+
+  <h3 class="important"> Compétences : </h3>
+  <ul>
+    <li class="important"> - Dynamique </li>
+    <li class="important"> - Motivé </li>
+    <li class="important"> - Esprit d'équipe </li>
+    <li class="important"> - Créative </li>
+    <li class="important"> - Sens du service </li>
+  </ul>
+
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2"> Manga </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td> Shonen </td>
+        <td> Bleach </td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td> Seinen </td>
+        <td> Berserk </td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td> Isekai </td>
+        <td> Mushoku tensei </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+</body>
+
+<script>
+
+  var age = prompt("quel est votre âge ?")
+
+  if (age < 18) {
+    alert("Je suis Mineur")
+  }
+
+  else {
+    alert("Je suis Majeur")
+  }
+
+  var quitter = confirm("Êtres vous sur de quitter la page ? ")
+
+  console.log("Valeur de la variable quitter : " + quitter);
+
+  function changeColor() {
+    var color = document.getElementById("presentation").style.backgroundColor;
+
+    if (color == "blue") {
+      document.getElementById("presentation").style.backgroundColor = "red";
+    }
+    else {
+      document.getElementById("presentation").style.backgroundColor = "blue";
+    }
+  }
+</script>
+
+</html>
